@@ -45,7 +45,7 @@ function initializeServiceWorker() {
   // We first must register our ServiceWorker here before any of the code in
   // sw.js is executed.
   
-  const registerServiceWorker = userServiceWork;
+  const registerSW = userServiceWork;
 
   async function userServiceWork() {
   // B1. TODO - Check if 'serviceWorker' is supported in the current browser
@@ -73,7 +73,7 @@ function initializeServiceWorker() {
     }
   }
 
-  registerServiceWorker();
+  registerSW();
 }
 
 /**
