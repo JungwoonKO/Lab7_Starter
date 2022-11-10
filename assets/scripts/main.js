@@ -136,11 +136,11 @@ async function getRecipes() {
         }
       }
 
-      catch (erro) {
+      catch (error) {
   // A10. TODO - Log any errors from catch using console.error
   // A11. TODO - Pass any errors to the Promise's reject() function
-        console.error('FAILED TO FETCH');
-        reject('FAILED TO FETCH'); 
+        console.error(error);
+        reject(error); 
       }
     }
   }
